@@ -55,37 +55,37 @@
 // целых чисел, которая возращает новый массив, 
 // где все элементы кратны пяти. ([1,2,5,12,15,21] вернет [5,15])
 
-let arrayForSelect = [1, 3, 4, 5, 15, 10, 20, 23, 35];
-let newArray = [];
+// let arrayForSelect = [1, 3, 4, 5, 15, 10, 20, 23, 35];
+// let newArray = [];
 
-let getArrayOfNum = function(arr) {
-    console.log(arr.length);
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 5 == 0) {
-            let k = 0;
-            newArray[k] = arr[i];
-            k++;
-        } else{
-            continue;
-        }
-    }
-    return newArray;
-} 
+// let getArrayOfNum = function(arr) {
+//     console.log(arr.length);
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 5 == 0) {
+//             let k = 0;
+//             newArray[k] = arr[i];
+//             k++;
+//         } else{
+//             continue;
+//         }
+//     }
+//     return newArray;
+// } 
 
-//      ????????????
-//   ????         ???
-// ????           ???
-//               ???
-//             ????
-//            ????
-//           ????
-//         ?????
-//         ?????
+// //      ????????????
+// //   ????         ???
+// // ????           ???
+// //               ???
+// //             ????
+// //            ????
+// //           ????
+// //         ?????
+// //         ?????
 
-//         ?????
-//         ?????
+// //         ?????
+// //         ?????
 
-console.log(getArrayOfNum(arrayForSelect));
+// console.log(getArrayOfNum(arrayForSelect));
 
 // Написать функцию, которая принимает массив чисел, 
 // например [1,2,3,4,5] и функция возращает среднее 
@@ -110,3 +110,17 @@ console.log(getArrayOfNum(arrayForSelect));
 // попробуй несколькими способами сделать, если догадаешься)
 
 
+let arrayForMove = [1,2,3,4,5];
+
+let getArrOfNumber = function (arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (i === 0){
+            arr[arr.length] = arr[i];
+        }
+    }
+    arr.splice(0, 1);
+    return arr;
+}
+
+
+console.log(getArrOfNumber(arrayForMove));
