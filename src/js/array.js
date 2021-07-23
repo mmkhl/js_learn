@@ -110,17 +110,17 @@
 // попробуй несколькими способами сделать, если догадаешься)
 
 
-let arrayForMove = [1,2,3,4,5];
+// let arrayForMove = [1,2,3,4,5];
 
-let getArrOfNumber = function (arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (i === 0){
-            arr[arr.length] = arr[i];
-        }
-    }
-    arr.splice(0, 1);
-    return arr;
-}
+// let getArrOfNumber = function (arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i === 0){
+//             arr[arr.length] = arr[i];
+//         }
+//     }
+//     arr.splice(0, 1);
+//     return arr;
+// }
 
 
-console.log(getArrOfNumber(arrayForMove));
+// console.log(getArrOfNumber(arrayForMove));

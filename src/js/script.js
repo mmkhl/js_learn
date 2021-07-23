@@ -27,3 +27,25 @@
 //     return generalCash;
 // }
 // console.log(runToObject(salaries));
+
+// Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+console.log(menu);
+
+function multiplyNumeric(object){
+    for (let prop in object) {
+        if (typeof object[prop] === "number") {
+            object[prop] *= 2;
+        } else {
+            continue;
+        }
+    }
+    return object;
+}
+console.log(multiplyNumeric(menu));
+
