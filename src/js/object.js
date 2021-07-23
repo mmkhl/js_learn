@@ -75,9 +75,9 @@
 //     }
 // }
 
-//     ladder.showStep(); // 0 (выводит ступеньку на который мы находимся)
+//     ladder.showStep(); 
 //     ladder.up(); 
 //     ladder.up();
-//     ladder.showStep(); // 2
+//     ladder.showStep(); 
 //     ladder.down();
 //     ladder.showStep()
