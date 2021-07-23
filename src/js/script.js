@@ -51,3 +51,33 @@
 
 // console.log(menu);
 
+// Написать объект ladder - объект, который позволяет 
+// подниматься вверх и спускаться. Пример работы должен быть таким:
+// 
+//     ladder.showStep(); // 0 (выводит ступеньку на который мы находимся)
+//     ladder.up(); 
+//     ladder.up();
+//     ladder.showStep(); // 2
+//     ladder.down();
+//     ladder.showStep(); // 1
+
+// let position = 0;
+
+// let ladder = {
+//     showStep () {
+//         console.log(`Вы находитесь на ${position} ступеньке!`);
+//     },
+//     up () {
+//         ++position;
+//     }, 
+//     down () {
+//         --position;
+//     }
+// }
+
+//     ladder.showStep(); // 0 (выводит ступеньку на который мы находимся)
+//     ladder.up(); 
+//     ladder.up();
+//     ladder.showStep(); // 2
+//     ladder.down();
+//     ladder.showStep()
