@@ -21,12 +21,18 @@
 // Выводим кнопку и инпут, в инпуте можно ввести любой и текст 
 // и при нажатии на кнопку, выводится алерт с текстом "Вы ввели 
 // 'текст инпута'" или "Вы ничего не ввели в поле".
+// function getValueFromInput() {
+//     let input = document.querySelector('.textarea');
+//     if (input.value !== ''){
+//         console.log(`Вы ввели ${input.value}`);
+//     } else {
+//         console.log("Вы ничего не ввели ");
+//     }
+// }
 
-document.body.innerHTML = `
-<input type="text" class = "textarea"> <br/><br/>
-<input type="text" class = "textarea"> <br/><br/>
-<input type="text" class = "textarea"> <br/><br/>
-<input type="text" class = "textarea"> <br/>`
+// document.body.innerHTML = `
+// <input type="text" class = "textarea"> <br/><br/>
+// <input type="button" value = "Click me" class = "button" onclick = "getValueFromInput(); "> `
 
 
 // Выводим кнопку с текстом "Поменять" и два инпута, при
