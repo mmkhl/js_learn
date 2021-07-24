@@ -1,0 +1,65 @@
+[33mcommit 9239de4455197bdead654c0677e3a162a960f0c0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Sat Jul 24 13:36:07 2021 +0600
+
+    New task in script.js
+
+[33mcommit 84657f6f384e533f807bf0c90d653845cafae18b[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Fri Jul 23 22:37:52 2021 +0600
+
+    New task
+
+[33mcommit fcc72c7c407ee27b68822d4f40f6d4c5ed0933ec[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Fri Jul 23 21:39:55 2021 +0600
+
+    New file script.js
+
+[33mcommit 39f9236200fdab31aab84ce965f29ddf8b8113af[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Fri Jul 23 16:42:16 2021 +0600
+
+    Last change in object.js (last task)
+
+[33mcommit 24d8f4f929225859256c197f908fea432f188a8b[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Fri Jul 23 16:32:23 2021 +0600
+
+    New changes in script.js (object.js)
+
+[33mcommit af6671bcc121d39c85a0f8c340f2c8b593b1546f[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Fri Jul 23 16:20:12 2021 +0600
+
+    Second task in 'Object' modules
+
+[33mcommit b99a3446b1a1f087984b4749d12bfc4c6217d3cc[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Thu Jul 22 22:40:14 2021 +0600
+
+    Task in array to complete
+
+[33mcommit 340fdfd6027419aaaefb2735976fabb7922db67c[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Thu Jul 22 21:36:44 2021 +0600
+
+    new folders
+
+[33mcommit e65e25ca92f36f04174e4ea4a688fcce6d6b6dd3[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Thu Jul 22 21:33:43 2021 +0600
+
+    create new file and structurization
+
+[33mcommit 2daf47b2b96a7fb7955a6425c0cf504bf61935b9[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Thu Jul 22 21:19:48 2021 +0600
+
+    Second commit
+
+[33mcommit aa0b18c7b50303425d78e31f195e9a6f3213404b[m
+Author: mmkhl <pmisha1014@gmail.com>
+Date:   Thu Jul 22 17:54:25 2021 +0600
+
+    First commit
