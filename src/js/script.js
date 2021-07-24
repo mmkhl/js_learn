@@ -8,16 +8,25 @@
 // Выводим кнопку с текстом "Заполнить" и незаполненный
 // инпут, при клике на кнопку, заполняем инпут текстом "test@email.ru"
 
-function fill(){
+// function fill(){
+//     const btn = document.getElementById('textarea')
+//     btn.value = "test@email.ru"
+// }
 
-}
-document.body.innerHTML = `
-<input>
-<button type="button" onclick= "fill();">Заполнить</button>
-`
+// document.body.innerHTML = `
+// <input type="text" id = "textarea">
+// <br/><br/>
+// <input type="button" value="Заполнить" id = "btn__fill" onclick= "fill(); ">`
+
 // Выводим кнопку и инпут, в инпуте можно ввести любой и текст 
 // и при нажатии на кнопку, выводится алерт с текстом "Вы ввели 
 // 'текст инпута'" или "Вы ничего не ввели в поле".
+
+document.body.innerHTML = `
+<input type="text" class = "textarea"> <br/><br/>
+<input type="text" class = "textarea"> <br/><br/>
+<input type="text" class = "textarea"> <br/><br/>
+<input type="text" class = "textarea"> <br/>`
 
 
 // Выводим кнопку с текстом "Поменять" и два инпута, при
