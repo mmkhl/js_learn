@@ -38,17 +38,20 @@
 // Выводим кнопку с текстом "Поменять" и два инпута, при
 // клике на кнопку инпуты меняются своим введеным текстом
 
-document.body.innerHTML = `
-    <input type = "text" id = "firstInput"/>
-    <input type = "text" id = "firstInput"/>
-    <br/><br/>
-    <input type = "button" id = "btn" value = "Поменять" onclick="changeInputValue(); "/>`
+// document.body.innerHTML = `
+//     <input type = "text" id = "firstInput"/>
+//     <input type = "button" id = "btn" value = "Поменять"/>
+//     <input type = "text" id = "secondInput"/>
+// `
+// let button = document.querySelector('#btn');
+// let firstElem = document.querySelector('#firstInput');
+// let secondElem = document.querySelector('#secondInput');
 
-document.addEventListener('click', function(){
-    let temp = document.querySelector("#firstInput").value;
-    document.querySelector("#firstInput").value = document.querySelector("#secondInput").value;
-    document.querySelector("#secondInput").value = temp; 
-});
+// button.addEventListener('click', function(){
+//     let temp = firstElem.value;
+//     firstElem.value = secondElem.value;
+//     secondElem.value = temp; 
+// });
 
 // Выводим две кнопки "заблокировать" и "разблокировать"
 // и инпут. Одна из них блокирует инпут с помощью 
