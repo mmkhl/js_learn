@@ -57,6 +57,22 @@
 // и инпут. Одна из них блокирует инпут с помощью 
 // атрибута disabled, а другая разблокирует
 
+// document.body.innerHTML = `
+//     <input type="text" id = "textarea"/>
+//     <input type="button" id = "enable__btn" value ="Разблокировать"/>
+//     <input type="button" id = "disable__btn" value ="Заблокировать"/>`;
+
+// let enableBtn = document.querySelector('#enable__btn');
+// let disableBtn = document.querySelector('#disable__btn');
+// let input = document.querySelector('#textarea');
+
+// enableBtn.addEventListener('click', function(){
+//     document.querySelector('#textarea').disabled = false
+
+// });
+// disableBtn.addEventListener('click', function(){
+//     document.querySelector('#textarea').disabled = true;
+// });
 
 
 // Вывести любой квадрат и кнопку "скрыть квадрат".Когда мы 
