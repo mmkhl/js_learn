@@ -80,36 +80,36 @@
 // нажимаем на скрыть, квадрат исчезает и текст кнопки меняется
 // на "показать квадрат" и так можно кликать сколько угодно раз.
 
-document.body.innerHTML = `
-    <div class="wrapper">
-        <div id="square"></div>
-        <input type="button" value="Скрыть" id="show__btn"/>
-    </div>
-`;
+// document.body.innerHTML = `
+//     <div class="wrapper">
+//         <div id="square"></div>
+//         <input type="button" value="Скрыть" id="show__btn"/>
+//     </div>
+// `;
 
-let wrapper = document.querySelector(".wrapper");
-    wrapper.style.margin = "0 auto";
-    wrapper.style.width = "400px";
-let square = document.querySelector("#square");
-    square.style.width = "200px";
-    square.style.height = "200px";
-    square.style.backgroundColor = "#000";
-    square.style.margin = "5px auto";
-let button = document.querySelector("#show__btn");
-    button.style.margin = "5px auto";
-    button.style.display = "block";
-    button.style.width = "100px";
-    button.style.height = "40px";
+// let wrapper = document.querySelector(".wrapper");
+//     wrapper.style.margin = "0 auto";
+//     wrapper.style.width = "400px";
+// let square = document.querySelector("#square");
+//     square.style.width = "200px";
+//     square.style.height = "200px";
+//     square.style.backgroundColor = "#000";
+//     square.style.margin = "5px auto";
+// let button = document.querySelector("#show__btn");
+//     button.style.margin = "5px auto";
+//     button.style.display = "block";
+//     button.style.width = "100px";
+//     button.style.height = "40px";
 
 
-button.addEventListener("click", ()=>{
-    document.querySelector("#square").toggleAttribute("hidden");
-    if (button.value == "Скрыть"){
-        button.value = "Показать";
-    } else if (button.value == "Показать") {
-        button.value = "Скрыть";
-    }
-});
+// button.addEventListener("click", ()=>{
+//     document.querySelector("#square").toggleAttribute("hidden");
+//     if (button.value == "Скрыть"){
+//         button.value = "Показать";
+//     } else if (button.value == "Показать") {
+//         button.value = "Скрыть";
+//     }
+// });
 
 
 
@@ -117,13 +117,24 @@ button.addEventListener("click", ()=>{
 // Выводим красный квадрат, при наведении на него он становиться
 // зеленым, а когда уводим курсор от него, обратно красным.
 
-
-
+// document.body.innerHTML = `
+//     <div id = "square"></div>`
+// let square = document.querySelector("#square")
+//     square.style.width = "200px";
+//     square.style.height = "200px";
+//     square.style.background = "red";
+// square.onmouseover = function () {
+//     square.style.background = "green";
+// }
+// square.onmouseleave = function () {
+//     square.style.background = "red";
+// }
 // Вывести 4 красных квадрата, при клике на любой, он становиться зеленым,
 // при этом если есть уже зеленый квадрат, то он становиться обратно красным
 // и так можно кликать на любой квадрат, он становиться зеленым, а старый
 // зеленый квадрат обратно крассным и тд. (Сделать задачу так, чтобы можно
 // было добавить ещё хоть 100 квадратов при этом скрипт не надо менять).
+
 
 
 // Реализовать калькулятор. Выводим 10 кнопок цифр от 0 до 10. Кнопки:
