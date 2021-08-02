@@ -135,36 +135,45 @@
 // зеленый квадрат обратно крассным и тд. (Сделать задачу так, чтобы можно
 // было добавить ещё хоть 100 квадратов при этом скрипт не надо менять).
 
-document.body.innerHTML = `
-    <div class="wrapper"></div>`
-let wrapper = document.querySelector('.wrapper');
-    wrapper.style.display="flex";
-    wrapper.style.flexWrap="wrap";
-for (let i = 1; i < 8; i++) {
-    let div = document.createElement('div');
-    div.classList.add('square')
-    div.innerHTML='';
-    wrapper.appendChild(div);
-}
+// document.body.innerHTML = `
+//     <div class="wrapper"></div>`
+// let wrapper = document.querySelector('.wrapper');
+//     wrapper.style.display="flex";
+//     wrapper.style.flexWrap="wrap";
+// for (let i = 1; i < 8; i++) {
+//     let div = document.createElement('div');
+//     div.classList.add('square')
+//     div.innerHTML='';
+//     wrapper.appendChild(div);
+// }
 
-let square = document.querySelectorAll(".square");
-for (let i=0; i< square.length;i++) {
-    square[i].style.width = "200px";
-    square[i].style.height = "200px";
-    square[i].style.background = "red";
-    square[i].style.margin = "5px "
-}
-for (let i = 0; i < square.length; i++) {
-    square[i].addEventListener('click', ()=>{
-        for(let u = 0; u < square.length; u++){
-            square[u].classList.remove('active');
-            square[u].style.background = 'red'
-        }
-        square[i].classList.add('active');
-        let active = document.querySelector('.active');
-        active.style.background = "green";
-    })
-}
+// let square = document.querySelectorAll(".square");
+// for (let i=0; i< square.length;i++) {
+//     square[i].style.width = "200px";
+//     square[i].style.height = "200px";
+//     square[i].style.background = "red";
+//     square[i].style.margin = "5px "
+// }
+// for (let i = 0; i < square.length; i++) {
+//     square[i].addEventListener('click', ()=>{
+//         for(let u = 0; u < square.length; u++){
+//             square[u].classList.remove('active');
+//             square[u].style.background = 'red'
+//         }
+//         square[i].classList.add('active');
+//         let active = document.querySelector('.active');
+//         active.style.background = "green";
+//     })
+// }
+
+
+
+// Задание от каролины: Сделать так, чтоб при нажатии на
+// элемент, менялись цвета на зеленый у всех кроме этого элемента
+
+// Задание от Павлика: Сделать так, чтоб при обновлении страницы,
+// запомнился активный блок, причем последний. Как я понял это уже BOM и вкуривать вного
+
 
 // Реализовать калькулятор. Выводим 10 кнопок цифр от 0 до 10. Кнопки:
 // умножить, поделить, сложить, вычесть, вычислить. При нажатии на кнопки
