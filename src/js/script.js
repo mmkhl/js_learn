@@ -148,13 +148,13 @@
 // }
 
 // let square = document.querySelectorAll(".square");
-// for (let i=0; i< square.length;i++) {
+// for (let i=0; i<br square.length;i++) {
 //     square[i].style.width = "200px";
 //     square[i].style.height = "200px";
 //     square[i].style.background = "red";
 //     square[i].style.margin = "5px "
 // }
-// for (let i = 0; i < square.length; i++) {
+// for (let i = 0; i <br square.length; i++) {
 //     square[i].addEventListener('click', ()=>{
 //         for(let u = 0; u < square.length; u++){
 //             square[u].classList.remove('active');
@@ -171,10 +171,24 @@
 // Задание от каролины: Сделать так, чтоб при нажатии на
 // элемент, менялись цвета на зеленый у всех кроме этого элемента
 
+// for (let i = 0; i <br square.length; i++) {
+//     square[i].addEventListener('click', ()=>{
+//         for(let u = 0; u < square.length; u++){
+//             square[u].classList.remove('active');
+//             square[u].style.background = 'green'
+//         }
+//         square[i].classList.add('active');
+//         if (document.querySelector('.active')) {
+//             square[i].style.background = "red";
+//         }
+
+//     })
+// }
 
 
 // Задание от Павлика: Сделать так, чтоб при обновлении страницы,
 // запомнился активный блок, причем последний. Как я понял это уже BOM и вкуривать вного
+
 
 
 // Реализовать калькулятор. Выводим 10 кнопок цифр от 0 до 10. Кнопки:
@@ -182,5 +196,39 @@
 // в любом порядке выводиться в отдельном блоке строка (5-4+3*2...) и при
 // нажатии на кнопку посчитать, заменяем в блоке данную строку на результат
 // её вычисления, при этом можно потом дальше вычислять с уже этим вычеслением.
+document.body.style = `
+    width: 300px;
+    margin:0 auto;
+    font-size: 16px;`
 
+document.body.innerHTML = `
+    <input id="textarea" type="textarea" value=""> </br>
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+    <input type="button" value="CE"></br>
+    <input type="button" value="4">
+    <input type="button" value="5">
+    <input type="button" value="6">
+    <input type="button" value="="></br>
+    <input type="button" value="7">
+    <input type="button" value="8">
+    <input type="button" value="9">
+    <input type="button" value="+"> </br>
+    <input type="button" value="0">
+    <input type="button" value="-">
+    <input type="button" value="*">
+    <input type="button" value="/"> `
 
+let inputCollection = document.getElementsByTagName('input');
+for (let i in inputCollection){
+    inputCollection[i].style = `
+    width: 55px;
+    height: 55px;
+    margin: 5px;`
+}
+let textarea = document.querySelector('#textarea');
+textarea.style = `
+    width: 255px;
+    height: 25px;
+    margin: 5px;`
