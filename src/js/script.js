@@ -225,10 +225,23 @@ for (let i in inputCollection){
     inputCollection[i].style = `
     width: 55px;
     height: 55px;
-    margin: 5px;`
+    margin: 5px;
+    font-size: 26px;`
 }
 let textarea = document.querySelector('#textarea');
 textarea.style = `
     width: 255px;
-    height: 25px;
+    height: 55px;
+    font-size: 26px;
     margin: 5px;`
+
+for (let i = 0; i< inputCollection.length; i++){
+    inputCollection[i].addEventListener('click', ()=>{
+        if (inputCollection[i].value === "CE"){
+            textarea.value = "";
+        }
+        if (typeof +(inputCollection[i].value) === "number"){
+            textarea.value += inputCollection[i].value;
+        }
+    })
+}
