@@ -197,30 +197,30 @@
 // нажатии на кнопку посчитать, заменяем в блоке данную строку на результат
 // её вычисления, при этом можно потом дальше вычислять с уже этим вычеслением.
 document.body.style = `
-    width: 300px;
+    width: 275px;
     margin:0 auto;
     font-size: 16px;`
 
 document.body.innerHTML = `
     <input id="textarea" type="textarea" value=""> </br>
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="3">
-    <input type="button" value="CE"></br>
-    <input type="button" value="4">
-    <input type="button" value="5">
-    <input type="button" value="6">
-    <input type="button" value="="></br>
-    <input type="button" value="7">
-    <input type="button" value="8">
-    <input type="button" value="9">
-    <input type="button" value="+"> </br>
-    <input type="button" value="0">
-    <input type="button" value="-">
-    <input type="button" value="*">
-    <input type="button" value="/"> `
+    <button class='btn'>1</button>
+    <button class='btn'>2</button>
+    <button class='btn'>3</button>
+    <button class='btn'>CE</button></br>
+    <button class='btn'>4</button>
+    <button class='btn'>5</button>
+    <button class='btn'>6</button>
+    <button class='btn'>=</button></br>
+    <button class='btn'>7</button>
+    <button class='btn'>8</button>
+    <button class='btn'>9</button>
+    <button class='btn'>+</button> </br>
+    <button class='btn'>0</button>
+    <button class='btn'>-</button>
+    <button class='btn'>*</button>
+    <button class='btn'>/</button> `
 
-let inputCollection = document.getElementsByTagName('input');
+let inputCollection = document.getElementsByTagName('button');
 for (let i in inputCollection){
     inputCollection[i].style = `
     width: 55px;
@@ -235,13 +235,3 @@ textarea.style = `
     font-size: 26px;
     margin: 5px;`
 
-for (let i = 0; i< inputCollection.length; i++){
-    inputCollection[i].addEventListener('click', ()=>{
-        if (inputCollection[i].value === "CE"){
-            textarea.value = "";
-        }
-        if (typeof +(inputCollection[i].value) === "number"){
-            textarea.value += inputCollection[i].value;
-        }
-    })
-}
