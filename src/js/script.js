@@ -202,25 +202,27 @@ document.body.style = `
     font-size: 16px;`
 
 document.body.innerHTML = `
-    <input id="textarea" type="textarea" value=""> </br>
-    <button class='btn'>1</button>
-    <button class='btn'>2</button>
-    <button class='btn'>3</button>
-    <button class='btn'>CE</button></br>
-    <button class='btn'>4</button>
-    <button class='btn'>5</button>
-    <button class='btn'>6</button>
-    <button class='btn'>=</button></br>
-    <button class='btn'>7</button>
-    <button class='btn'>8</button>
-    <button class='btn'>9</button>
-    <button class='btn'>+</button> </br>
-    <button class='btn'>0</button>
-    <button class='btn'>-</button>
-    <button class='btn'>*</button>
-    <button class='btn'>/</button> `
+    <input id="textarea" type="textarea" value=""></br>
+    <input class="btn" type="button" value="1">
+    <input class="btn" type="button" value="2">
+    <input class="btn" type="button" value=3>
+    <input id="clear" type="button" value="CE"></br>
+    <input class="btn" type="button" value="4">
+    <input class="btn" type="button" value="5">
+    <input class="btn" type="button" value="6">
+    <input class="btn" onclick="getResult(textarea.value)" type="button" value="=">
+    </br>
+    <input class="btn" type="button" value="7">
+    <input class="btn" type="button" value="8">
+    <input class="btn" type="button" value="9">
+    <input class="btn" type="button" value="+"> </br>
+    <input class="btn" type="button" value="0">
+    <input class="btn" type="button" value="-">
+    <input class="btn" type="button" value="*">
+    <input class="btn" type="button" value="/"> `
 
-let inputCollection = document.getElementsByTagName('button');
+
+let inputCollection = document.getElementsByTagName('input');
 for (let i in inputCollection){
     inputCollection[i].style = `
     width: 55px;
@@ -228,10 +230,29 @@ for (let i in inputCollection){
     margin: 5px;
     font-size: 26px;`
 }
+
 let textarea = document.querySelector('#textarea');
 textarea.style = `
     width: 255px;
     height: 55px;
     font-size: 26px;
     margin: 5px;`
+
+for (let i = 0; i < inputCollection.length; i++) {
+    inputCollection[i].addEventListener('click', ()=>{
+        if (inputCollection[i].value === 'CE'){
+            textarea.value = '';
+        } else if (typeof +(inputCollection[i]).value === 'number'){
+            textarea.value += inputCollection[i].value;
+        } else if (inputCollection[i].value === '=') {
+            inputCollection[i].value = "";
+        }
+    })
+}
+
+function  getResult(value){
+    console.log(eval(value));
+    textarea.value = eval(value);
+}
+
 
