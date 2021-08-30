@@ -210,7 +210,7 @@ document.body.innerHTML = `
     <input class="btn" type="button" value="4">
     <input class="btn" type="button" value="5">
     <input class="btn" type="button" value="6">
-    <input class="btn" onclick="getResult(textarea.value)" type="button" value="=">
+    <button class="result" onclick="getResult(textarea.value)" type="button">=</button>
     </br>
     <input class="btn" type="button" value="7">
     <input class="btn" type="button" value="8">
@@ -230,6 +230,11 @@ for (let i in inputCollection){
     margin: 5px;
     font-size: 26px;`
 }
+document.querySelector('.result').style = `
+width: 55px;
+height: 55px;
+margin: 5px;
+font-size: 26px;`
 
 let textarea = document.querySelector('#textarea');
 textarea.style = `
@@ -244,8 +249,6 @@ for (let i = 0; i < inputCollection.length; i++) {
             textarea.value = '';
         } else if (typeof +(inputCollection[i]).value === 'number'){
             textarea.value += inputCollection[i].value;
-        } else if (inputCollection[i].value === '=') {
-            inputCollection[i].value = "";
         }
     })
 }
