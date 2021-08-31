@@ -221,6 +221,10 @@ document.body.innerHTML = `
     <input class="btn" type="button" value="*">
     <input class="btn" type="button" value="/"> `
 
+    function  getResult(value){
+        console.log(eval(value));
+        textarea.value = eval(value);
+    }
 
 let inputCollection = document.getElementsByTagName('input');
 for (let i in inputCollection){
@@ -253,9 +257,6 @@ for (let i = 0; i < inputCollection.length; i++) {
     })
 }
 
-function  getResult(value){
-    console.log(eval(value));
-    textarea.value = eval(value);
-}
+
 
 
