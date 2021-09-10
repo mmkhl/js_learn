@@ -4,6 +4,29 @@
 // http://site.ru/index.php - валидный, http://site.com - не валидный,
 //  site.ru/index.php - не валидный
 
+let regEx1 = /^http(|s):\/\/+[(a-z)]{1,32}\.com|ru|org|su+\/.|php$|html$/igm ;
+
+document.body.innerHTML = `
+    <input type="textarea" id="area">
+    <button id="btn" type="submit">Проверить</button>`
+
+document.body.style = `
+    max-width: 350px;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: 500;`
+    let inputTag = document.querySelector('#area')
+    document.querySelector('#btn').addEventListener('click', ()=>{
+        if (regEx1.test(inputTag.value)){
+            console.log("OKAY");
+        } else {
+            console.log("Is not OKAY");
+        }
+    })
+
+
+
+
 
 
 
