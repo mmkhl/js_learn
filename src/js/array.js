@@ -13,7 +13,7 @@
 // let getArrNum = function(arrNum) {
 //     let flag;
 //     for (let i = 0; i < arrNum.length; i++) {
-//         if (arrNum[i] % 2 == 0) {
+//         if (arrNum[i]er % 2 == 0) {
 //             console.log(123);
 //             flag = true;        
 //         } else if (arrNum[i] % 2 !== 0){
