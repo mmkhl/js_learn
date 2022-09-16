@@ -46,6 +46,9 @@ let promise = new Promise((resolve, reject) => {
 })
 
 
+promise.then((value) => console.log(value))
+
+
 
 // Скопируем решения из прошлой задачи и переписываем на async-await
 // функцию, конструкцию .then - не используем
